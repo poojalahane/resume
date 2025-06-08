@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puja Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/logo-1.png"
+            alt="Logo"
+            class="logo"
+            style="opacity: 0.3"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web Developer..</p>
+          <h1>
+            Hi, I'm <span>Puja</span> <br />
+            Lahane From Pune
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images_puja/p5.jpeg" alt="Puja Lahane" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm Puja Lahane, a passionate and motivated MERN stack
+              developer with a strong foundation in MongoDB, Express.js, React,
+              and Node.js. As a recent graduate in B.tech Computer Science from
+              Deogiri College, I have developed a keen interest in web
+              development and a commitment to continuous learning and growth in
+              this dynamic field.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />
+                  Proficient in React, HTML, CSS, and JavaScript, Next Js,
+                  Tailwind, TypeScript. I enjoy crafting responsive and
+                  user-friendly interfaces.
+                </li>
+                <li>
+                  <span>Backend Development</span><br />
+                  Skilled in building robust and scalable server-side
+                  applications using Node.js and Express.js.
+                </li>
+                <li>
+                  <span>Database Management</span><br />
+                  Experienced with MongoDB and Postgress for creating and
+                  managing databases, ensuring data consistency and security.
+                </li>
+                <li>
+                  <span>Version Control</span><br />
+                  Comfortable using Git, Bitbucket and GitHub for version
+                  control and collaborative development.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Saffire Softtech</span><br />
+                  Full Stack Developer
+                </li>
+                <li>
+                  <span>PHN Technology</span><br />
+                  Web Developer Intern
+                </li>
+                <li>
+                  <span>GDSC</span><br />
+                  Frontend Developer Intern
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Deogiri College</span><br />
+                  B.Tech Computer Science
+                </li>
+                <li>
+                  <span>Shivraj College</span><br />
+                  HSC
+                </li>
+                <li>
+                  <span>Shivaji Highschool</span><br />
+                  SSC
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design and Development</h2>
+            <p>
+              Web Design and Development is a comprehensive service that
+              involves creating and maintaining websites. It encompasses various
+              aspects, from the initial design phase to the final deployment and
+              ongoing maintenance.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              UI Design involves designing the interface through which users
+              interact with a product, be it a website, application, or any
+              other digital interface. UX Design focuses on the overall
+              experience a user has when interacting with a product.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Custom Web Solutions</h2>
+            <p>
+              Custom web solutions refer to tailor-made web development services
+              designed to meet the specific needs and requirements of a business
+              or individual.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/w1.avif" alt="Age Calculator" />
+            <div class="layer">
+              <h3>Kisan Basket Ecommerce Platform</h3>
+              <p>
+                A customer-centric e-commerce platform developed using Next.js,
+                Tailwind CSS designed to facilitate the online purchase of
+                agricultural products. The application offers a seamless user
+                experience with features.
+              </p>
+              <a href="https://github.com/SamruddhiKulkarni672/FreshAtta">
+                <i class="fa-sharp fa-solid fa-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/w2.avif" alt="Guess Number Game" />
+            <div class="layer">
+              <h3>School Management Portal</h3>
+              <p>
+                A comprehensive web-based School Management System developed
+                using the MERN stack to streamline administrative and academic
+                processes. The system supports role-based access
+              </p>
+              <a href="https://github.com/poojalahane/schoolapp">
+                <i class="fa-sharp fa-solid fa-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/w4.jpg" alt="QR Code Generator" />
+            <div class="layer">
+              <h3>Employee Feedback App</h3>
+              <p>
+                A web application developed with the MERN stack that enables
+                organizations to collect, manage, and analyze employee feedback
+                efficiently. The app supports user authentication, role-based
+                access.
+              </p>
+              <a
+                href="https://github.com/poojalahane/employee-feedback-project"
+              >
+                <i class="fa-sharp fa-solid fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> poojalahane144@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i> 8261854270</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/pooja-lahane-aab204210/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/poojalahane"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="images/my-cv2.pdf"
+              download
+              class="btn btn2"
+              style="
+                display: flex;
+                height: 60px;
+                text-align: center;
+                padding-top: 20px;
+                margin-left: 0;
+                margin-top: 55px;
+              "
+            >
+              Download CV
+            </a>
+          </div>
+
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button type="submit" class="btn btn2" style="color: black">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> Puja Lahane</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
